@@ -44,9 +44,27 @@
     color: #fff !important;
   }
   @media (max-width: 600px) {
-    .carousel-caption {
-      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
-    }
+  .carousel-caption {
+    font-size: 14px;
+    bottom: 10px;
+  }
+  .carousel-caption h3 {
+    font-size: 18px;
+  }
+  @media (max-width: 600px) {
+  .carousel-caption {
+    font-size: 14px;
+    bottom: 10px;
+  }
+  .carousel-caption h3 {
+    font-size: 18px;
+  }
+}
+
+  .carousel-caption h3 {
+    font-size: 18px;
+  }
+}
   }
   .bg-1 {
     background: #2d2d30;
@@ -128,7 +146,7 @@
     background-color: #555 !important;
   }
   .dropdown-menu li a {
-    color: #fcf8f8 !important;
+    color: #777 !important;
   }
   .dropdown-menu li a:hover {
     background-color: red !important;
@@ -151,6 +169,10 @@
   textarea {
     resize: none;
   }
+  img {
+  max-width: 100%;
+  height: auto;
+}
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -175,7 +197,7 @@
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
           <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">ÄHÄKUTTI, EI TÄÄ VIE MINNEE</a></li>
+            <li><a href="#">Ähäkutti, tämä on dead end.</a></li>
           
     
           </ul>
@@ -236,7 +258,7 @@
 <div id="band" class="container text-center">
   <h3>BÄNDI</h3>
   <p><em>SOITETAAN MITÄ OSATAAN</em></p>
-  <p>Tehdään mitä voidaan annetuilla taidoilla</p>
+  <p>Tehdään mitä voidaan</p>
   <br>
   <div class="row">
     <div class="col-sm-4">
@@ -255,7 +277,7 @@
         <img src="ruska.jpg" class="img-circle person" alt="RUSKA" width="255" height="255">
       </a>
       <div id="demo2" class="collapse">
-        <p>Dentastixejä, nameja ja rapsutuksia.</p>>
+        <p>Dentastixejä, nameja ja rapsutuksia.</p>
       </div>
     </div>
     <div class="col-sm-4">
@@ -264,7 +286,7 @@
         <img src="aino.jpeg" class="img-circle person" alt="AINO" width="255" height="255">
       </a>
       <div id="demo3" class="collapse">
-       <p>Kaksi kovaa, LÄÄKKEET JA LATZ!</p>>
+       <p>Kaksi kovaa, LÄÄKKEET JA LATZ!</p>
       </div>
     </div>
   </div>
@@ -319,14 +341,14 @@
         <div class="modal-body">
           <form role="form">
             <div class="form-group">
-              <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Tickets, $23 per person</label>
+              <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Vapaaehtoisesti voit laittaa kympin</label>
               <input type="number" class="form-control" id="psw" placeholder="Paljo laitetaa">
             </div>
             <div class="form-group">
               <label for="usrname"><span class="glyphicon glyphicon-user"></span> Send To</label>
               <input type="text" class="form-control" id="usrname" placeholder="Minne laitellaa">
             </div>
-              <button type="submit" class="btn btn-block">Pay 
+              <button type="submit" class="btn btn-block">Rahat tiskiin
                 <span class="glyphicon glyphicon-ok"></span>
               </button>
           </form>
@@ -335,7 +357,7 @@
           <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
             <span class="glyphicon glyphicon-remove"></span> Perutaan
           </button>
-          <p>Need <a href="#">help?</a></p>
+          <p>Tarvikko <a href="#">apua?</a></p>
         </div>
       </div>
     </div>
@@ -383,7 +405,7 @@
   <div class="tab-content">
     <div id="home" class="tab-pane fade in active">
       <h2>Nippe</h2>
-      <p>On ollu pitkä kiertue ja tyhjät salit</p>
+      <p>On ollu kovin pitkä kiertue ja tyhjät salit jatkuvasti</p>
     </div>
     <div id="menu1" class="tab-pane fade">
       <h2>Ruska</h2>
@@ -391,17 +413,15 @@
     </div>
     <div id="menu2" class="tab-pane fade">
       <h2>Aino</h2>
-      <p>MIAU!</p>
+      <p>PURRNAU!</p>
     </div>
   </div>
 </div>
 
-<!-- Image of location/map -->
-<img src="map.jpg" class="img-responsive" style="width:100%">
 
 <!-- Footer -->
 <footer class="text-center">
-  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TAKASI YLÖS">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a><br><br>
 </footer>
